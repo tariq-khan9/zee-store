@@ -8,11 +8,11 @@ import { useState } from "react";
 
 const ProductCard = ({ product, featured = false }) => {
   const [isHovered, setIsHovered] = useState(false);
-  console.log("product in card ", product);
+
   return (
     <Link href={`/product/${product.id}`}>
       <Card
-        className={`overflow-hidden  h-full transition-all duration-300 border hover:shadow-lg ${
+        className={`overflow-hidden dark:bg-gray-800  h-full transition-all duration-300 border hover:shadow-lg rounded-none ${
           isHovered ? "transform hover:-translate-y-1" : ""
         }`}
         onMouseEnter={() => setIsHovered(true)}
@@ -29,37 +29,31 @@ const ProductCard = ({ product, featured = false }) => {
           />
           {/* Badges */}
         </div>
-        <CardContent className={`p-4 ${featured ? "p-6" : ""}`}>
+        <CardContent className={`p-4  ${featured ? "p-6" : ""}`}>
           <div className="space-y-1">
             <h3 className={`font-medium truncate ${featured ? "text-xl" : ""}`}>
               {product.name}
             </h3>
-            {/* <p className="text-sm text-muted-foreground truncate">
-              {product.disciption?.charAt(0).toUpperCase() +
-                product.disciption?.slice(1)}
-            </p> */}
+            <p className="text-sm text-muted-foreground truncate">
+              {product.description?.charAt(0).toUpperCase() +
+                product.description?.slice(1)}
+            </p>
           </div>
         </CardContent>
         <CardFooter
-          className={`p-4 pt-0 flex items-center justify-between ${
-            featured ? "p-6 pt-0" : ""
+          className={`p-3 px-4 pt-0  flex items-center justify-between ${
+            featured ? "p-4 px-6 pt-0" : ""
           }`}
         >
-          {/* <div className="flex items-baseline gap-2">
-            <span className={`font-medium ${featured ? "text-lg" : ""}`}>
-              ${product.price}
-            </span>
-            {product.oldPrice && (
-              <span className="text-sm text-muted-foreground line-through">
-                ${product.oldPrice}
-              </span>
-            )}
-          </div> */}
+          <p className="text-sm text-muted-foreground gap-2 truncate">
+            <span className="font-semibold">Price: </span>
+            {product.product_variants[0].store_price}
+          </p>
           <div
             className="transition-opacity duration-300"
             style={{ opacity: isHovered ? 1 : 0 }}
           >
-            <Button size="sm" variant="outline" className="rounded-full">
+            <Button size="sm" variant="outline" className=" rounded-full">
               <ShoppingCart className="h-4 w-4" />
             </Button>
           </div>

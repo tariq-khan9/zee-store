@@ -26,13 +26,15 @@ const Collections = ({ collections }) => {
           {collections.map((category, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-700 rounded-2xl overflow-hidden ${
+              className={`absolute inset-0 transition-all duration-700 overflow-hidden ${
                 index === activeIndex
                   ? "opacity-100 translate-x-0 rotate-0 scale-100"
                   : "opacity-0 translate-x-8 rotate-2 scale-95"
               }`}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br to-white`} />
+              <div
+                className={`absolute inset-0 bg-gradient-to-br to-gray-500`}
+              />
               <img
                 src={`http://127.0.0.1:8000${category.img_url}`}
                 alt={category.name}
@@ -46,7 +48,7 @@ const Collections = ({ collections }) => {
                 <p className="text-white/80 mb-6">{category.desctiption}</p>
                 <Button
                   variant="outline"
-                  className="bg-white/10 text-white border-white/20 backdrop-blur-sm hover:bg-white/20"
+                  className="bg-white/10 rounded-none text-white border-white/20 backdrop-blur-sm hover:bg-white/20"
                 >
                   Explore Collection
                 </Button>

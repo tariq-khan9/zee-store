@@ -38,10 +38,14 @@ const Newsletter = ({ className }) => {
               placeholder="Your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground rounded-none placeholder:text-primary-foreground/60"
               required
             />
-            <Button type="submit" variant="secondary" className="px-6">
+            <Button
+              type="submit"
+              variant="secondary"
+              className="px-6 rounded-none"
+            >
               Subscribe
             </Button>
           </form>

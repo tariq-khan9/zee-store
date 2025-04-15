@@ -1,66 +1,68 @@
 import LandingPage from "@/components/pages/Landing";
 import NewArrival from "@/components/landing/Brands";
 
-import BestSelling from "@/components/landing/BestSelling";
-import NewArrivals from "@/components/landing/NewArrivals";
 import Testimonials from "@/components/landing/Testimonials";
 import Newsletter from "@/components/landing/Newsletter";
 import Collections from "@/components/landing/Collections";
-
-async function getData() {
-  const res = await fetch("http://localhost:8000/api/");
-
-  if (!res.ok) {
-    const errorText = await res.text();
-    console.error("Fetch failed:", res.status, errorText);
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json(); // only if response is ok
-}
-
-async function getCollection() {
-  const res = await fetch("http://localhost:8000/api/collection");
-
-  if (!res.ok) {
-    const errorText = await res.text();
-    console.error("Fetch failed:", res.status, errorText);
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json(); // only if response is ok
-}
+import Brands from "@/components/landing/Brands";
+import BestSelling from "@/components/landing/BestSelling";
+import NewArrivals from "@/components/landing/NewArrivals";
+import { getData, getBrand, getCollection, getStock } from "@/lib/api";
 
 async function Home() {
-  const newArrivals = await getData();
+  const allProducts = await getData();
+  const stocks = await getStock();
+
+  const sortedStock = stocks
+    .sort((a, b) => {
+      return b.units_sold - a.units_sold;
+    })
+    .map((product) => {
+      return {
+        product_variant: product.product_variant,
+        units_sold: product.units_sold,
+      };
+    });
+
+  const topSoldProducts = allProducts
+    .map((product) => {
+      const totalSold = product.product_variants.reduce((sum, variant) => {
+        return sum + (variant.variant_stock?.units_sold || 0);
+      }, 0);
+
+      return {
+        ...product,
+        product_sold: totalSold,
+      };
+    })
+    .sort((a, b) => b.product_sold - a.product_sold)
+    .slice(0, 6);
+
   const collections = await getCollection();
+  const brands = await getBrand();
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="px-20 bg-gray-50">
+    <div className="flex flex-col bg-gray-50 min-h-screen">
+      <div className="px-20 mt-20  dark:bg-black">
         <Collections collections={collections} />
         <div className="mt-20">
-          <h1>New Arrivals</h1>
-          <NewArrivals newArrivals={newArrivals} />
+          <NewArrivals products={allProducts} />
         </div>
 
         <div className="mt-20">
-          <h1>Brands</h1>
-          {/* <NewArrival newArrivals={newArrivals} /> */}
+          <Brands brands={brands} />
         </div>
 
         <div className="mt-20">
-          <h1>Category Products</h1>
-          <BestSelling products={newArrivals} />
+          <BestSelling topSoldProducts={topSoldProducts} />
         </div>
 
         <div>
           <Testimonials />
         </div>
-
-        <div>
-          <Newsletter />
-        </div>
+      </div>
+      <div className="px-0 w-full">
+        <Newsletter />
       </div>
     </div>
   );

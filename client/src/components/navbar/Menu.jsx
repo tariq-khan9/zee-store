@@ -13,7 +13,7 @@ const Menu = () => {
     <div className="">
       <IoMenuSharp onClick={() => setOpen((prev) => !prev)} size={25} />
       {open && (
-        <div className="absolute left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 text-xl  z-10">
+        <div className="absolute font-semibold bg-white/80  dark:bg-black/80 z-20 left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 text-xl ">
           <Link href="/">Homepage</Link>
           <Link href="/">Shop</Link>
           <Link href="/">Deals</Link>

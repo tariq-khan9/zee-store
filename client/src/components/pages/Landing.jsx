@@ -11,8 +11,8 @@ import Testimonials from "../landing/Testimonials";
 import Newsletter from "../landing/Newsletter";
 
 import Categories from "../landing/Collections";
-import ProductCarousel from "../landing/NewArrivals";
-import BestSelling from "../landing/BestSelling";
+import ProductCarousel from "../landing/BestSelling";
+import BestSelling from "../landing/NewArrivals";
 import NewArrival from "../landing/Brands";
 
 export default function LandingPage() {
