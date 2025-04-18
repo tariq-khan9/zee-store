@@ -7,11 +7,22 @@ import Collections from "@/components/landing/Collections";
 import Brands from "@/components/landing/Brands";
 import BestSelling from "@/components/landing/BestSelling";
 import NewArrivals from "@/components/landing/NewArrivals";
-import { getData, getBrand, getCollection, getStock } from "@/lib/api";
+import {
+  getData,
+  getBrand,
+  getCollection,
+  getStock,
+  getTestimonial,
+} from "@/lib/api";
 
 async function Home() {
   const allProducts = await getData();
   const stocks = await getStock();
+  const testimonials = await getTestimonial();
+  console.log("testimonial ", testimonials);
+  const newArrivals = allProducts
+    .sort((a, b) => b.created_at - a.created_at)
+    .slice(0, 8);
 
   const sortedStock = stocks
     .sort((a, b) => {
@@ -58,7 +69,7 @@ async function Home() {
         </div>
 
         <div>
-          <Testimonials />
+          <Testimonials testimonials={testimonials} />
         </div>
       </div>
       <div className="px-0 w-full">

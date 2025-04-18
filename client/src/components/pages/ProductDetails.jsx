@@ -38,14 +38,16 @@ const ProductDetails = ({ product }) => {
 
   return (
     <>
-      <div className="flex w-full bg-gray-400 px-28 pt-12 gap-10">
-        <div className="flex flex-row gap-6">
+      <div className="flex items-center flex-col md:flex-row w-full lg:px-28 px-4 sm:pt-12 gap-4 md:gap-10">
+        <div className="flex flex-col-reverse sm:flex-row gap-2 sm:gap-6">
           <div
-            className={`grid grid-flow-row ${
+            className={`flex flex-row sm:flex-col 
+            ${
               product.product_media.length === 4
-                ? "content-between"
-                : "content-start gap-6"
-            }`}
+                ? "justify-between"
+                : "justify-center gap-4"
+            }
+            `}
           >
             {product.product_media.map((prod, i) =>
               i !== featureImage ? (
@@ -73,7 +75,7 @@ const ProductDetails = ({ product }) => {
             />
           </div>
         </div>
-        <div className="flex flex-col bg-amber-300 p-4">
+        <div className="flex flex-col  p-4">
           <h1 className="text-xl font-bold">{product.name}</h1>
           <p className="text-yellow-500">*****</p>
           <h2 className="text-lg font-semibold">$ {product.regular_price}</h2>

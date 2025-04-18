@@ -10,7 +10,7 @@ const ProductCard = ({ product, featured = false }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Link href={`/product/${product.id}`}>
+    <Link href={`/product/${product.slug}`}>
       <Card
         className={`overflow-hidden dark:bg-gray-800  h-full transition-all duration-300 border hover:shadow-lg rounded-none ${
           isHovered ? "transform hover:-translate-y-1" : ""

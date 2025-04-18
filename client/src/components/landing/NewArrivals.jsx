@@ -12,12 +12,13 @@ const categories = [
 const NewArrivals = ({ products, className }) => {
   const [activeCategory, setActiveCategory] = useState(categories[0].id);
 
-  console.log("new arrivals in ", products);
   //const filteredProducts = products;
   const filteredProducts = products
     .filter((product) => {
       return product.category === activeCategory;
     })
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+
     .slice(0, 8);
 
   return (

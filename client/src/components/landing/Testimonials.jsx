@@ -4,28 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const testimonials = [
-  {
-    avatar: "/images/user1.jpg",
-    name: "John Doe",
-    rating: 5,
-    text: "This service is fantastic! Highly recommended.",
-  },
-  {
-    avatar: "/images/user2.jpg",
-    name: "Jane Smith",
-    rating: 4,
-    text: "Great experience overall. Would use again.",
-  },
-  {
-    avatar: "/images/user3.jpg",
-    name: "Sam Wilson",
-    rating: 5,
-    text: "Absolutely loved it. Excellent customer service.",
-  },
-];
-
-const Testimonials = ({ className }) => {
+const Testimonials = ({ testimonials, className }) => {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [animating, setAnimating] = useState(false);
   const interval = useRef(null);
@@ -72,8 +51,12 @@ const Testimonials = ({ className }) => {
                   <div className="flex justify-center">
                     <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-background">
                       <img
-                        src={testimonials[currentIdx].avatar}
-                        alt={testimonials[currentIdx].name}
+                        src={
+                          process.env.NEXT_PUBLIC_SERVER_URL +
+                          "/" +
+                          testimonials[currentIdx].user.profile.avatar
+                        }
+                        alt={testimonials[currentIdx].user.username}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -92,11 +75,11 @@ const Testimonials = ({ className }) => {
                       ))}
                     </div>
                     <p className="text-lg italic">
-                      "{testimonials[currentIdx].text}"
+                      "{testimonials[currentIdx].content}"
                     </p>
                     <div>
                       <h4 className="font-semibold">
-                        {testimonials[currentIdx].name}
+                        {testimonials[currentIdx].user.username}
                       </h4>
                       <p className="text-sm text-muted-foreground">
                         Verified Customer

@@ -43,11 +43,11 @@ export default async function Page({ params }) {
   }
 
   return (
-    <>
+    <div className="mt-24">
       <Head>
         <title>{product.title}</title>
       </Head>
       <ProductDetails product={product} />
-    </>
+    </div>
   );
 }

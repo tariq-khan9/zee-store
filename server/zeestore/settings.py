@@ -25,6 +25,8 @@ SECRET_KEY = 'django-insecure-sb^l_2pw$tw_6j_19@_jsjz7g(hbi51w*d3at58+c9xn!(zeg8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+AUTH_USER_MODEL = 'users.ZeeUser'
+
 ALLOWED_HOSTS = []
 
 
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "corsheaders",
     'store',
+    'users',
     'mptt',
 ]
 
