@@ -1,0 +1,2763 @@
+[
+{
+  "model": "store.collection",
+  "pk": 8,
+  "fields": {
+    "name": "Men's Fashion",
+    "desctiption": "Lorem Ipsum is simply dummy text of the printing",
+    "img_url": "mens_AMXcr08.JPG"
+  }
+},
+{
+  "model": "store.collection",
+  "pk": 9,
+  "fields": {
+    "name": "Women Apperal",
+    "desctiption": "Industry's standard dummy text ever since the 1500s",
+    "img_url": "women_oHtxVuQ.JPG"
+  }
+},
+{
+  "model": "store.collection",
+  "pk": 10,
+  "fields": {
+    "name": "Kids Collection",
+    "desctiption": "Printing and typesetting industry. Lorem Ipsum",
+    "img_url": "vecteezy_fashion-model-kids_26911394_Vwec72G.jpg"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 1,
+  "fields": {
+    "name": "Men",
+    "slug": "men",
+    "is_active": false,
+    "parent": null,
+    "lft": 1,
+    "rght": 2,
+    "tree_id": 2,
+    "level": 0
+  }
+},
+{
+  "model": "store.category",
+  "pk": 2,
+  "fields": {
+    "name": "Women",
+    "slug": "women",
+    "is_active": false,
+    "parent": null,
+    "lft": 1,
+    "rght": 2,
+    "tree_id": 3,
+    "level": 0
+  }
+},
+{
+  "model": "store.category",
+  "pk": 3,
+  "fields": {
+    "name": "Kids",
+    "slug": "kids",
+    "is_active": true,
+    "parent": null,
+    "lft": 1,
+    "rght": 2,
+    "tree_id": 1,
+    "level": 0
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "web_id": "d90b1aea-3fa7-4b1f-8f48-c31f3814756e",
+    "slug": "men-shirt",
+    "name": "MEN BLACK SHIRTS",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-03-14T06:30:56.100Z",
+    "updated_at": "2025-03-14T06:30:56.100Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "web_id": "d5c9d3de-7909-4b25-bb31-e6c7f427aaf5",
+    "slug": "men-shirt-white",
+    "name": "Men White Shirt",
+    "description": "s, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infan",
+    "category": 1,
+    "is_active": false,
+    "created_at": "2025-03-14T06:44:33.451Z",
+    "updated_at": "2025-03-14T06:44:33.451Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 4,
+  "fields": {
+    "web_id": "43257c17-7edd-4285-b822-39ae72231bfa",
+    "slug": "women-shirt",
+    "name": "Women Shirt",
+    "description": "ontent of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+    "category": 2,
+    "is_active": false,
+    "created_at": "2025-03-14T06:49:57.674Z",
+    "updated_at": "2025-03-14T06:49:57.674Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 5,
+  "fields": {
+    "web_id": "2d6a72d4-b390-4819-a640-a936a913dfdf",
+    "slug": "black-2",
+    "name": "Men Black Colered",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-04-09T14:39:09.665Z",
+    "updated_at": "2025-04-09T14:39:09.665Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 6,
+  "fields": {
+    "web_id": "8b1203af-96d0-4ccc-8ea2-06529abb23a7",
+    "slug": "men-jacket",
+    "name": "Men's Jacket",
+    "description": "established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed",
+    "category": 1,
+    "is_active": false,
+    "created_at": "2025-04-09T17:20:05.085Z",
+    "updated_at": "2025-04-09T17:20:05.085Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 7,
+  "fields": {
+    "web_id": "5e24cf57-dfdc-4551-b023-90911a18e842",
+    "slug": "men-shirt3",
+    "name": "Men's Thick Shirt",
+    "description": "printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    "category": 1,
+    "is_active": false,
+    "created_at": "2025-04-09T17:23:49.181Z",
+    "updated_at": "2025-04-09T17:23:49.181Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 8,
+  "fields": {
+    "web_id": "eaf87270-c64b-4511-9d5e-555254ae5741",
+    "slug": "men-white3",
+    "name": "White Dress Men",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-04-09T17:28:18.493Z",
+    "updated_at": "2025-04-09T17:28:18.493Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 9,
+  "fields": {
+    "web_id": "4ed6f2ef-1216-4217-bca1-52e2a9fff1df",
+    "slug": "men-in-blue",
+    "name": "Men In-Blue",
+    "description": "long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it ha",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-04-09T17:31:01.257Z",
+    "updated_at": "2025-04-09T17:31:01.257Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 10,
+  "fields": {
+    "web_id": "e9785531-f66e-4c57-b53a-c3399e6f784c",
+    "slug": "men-white-tale",
+    "name": "White Tales Men",
+    "description": "established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it ha",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-04-09T17:35:38.229Z",
+    "updated_at": "2025-04-09T17:35:38.229Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 11,
+  "fields": {
+    "web_id": "f6a21b2a-5e46-4a2e-a179-174608c71d3a",
+    "slug": "men-inblack",
+    "name": "In-Black Men",
+    "description": "Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lor",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-04-09T17:37:52.670Z",
+    "updated_at": "2025-04-09T17:37:52.670Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 12,
+  "fields": {
+    "web_id": "1a0400fe-6023-4ff9-8f21-a3371cb30f2a",
+    "slug": "men-pocket",
+    "name": "Pocket Shirt Men",
+    "description": "established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that i",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-04-09T17:40:02.050Z",
+    "updated_at": "2025-04-09T17:40:02.050Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 13,
+  "fields": {
+    "web_id": "66cdced6-bc25-4a7f-955c-92458ceb6680",
+    "slug": "men-multi",
+    "name": "Multi Thin Shirt",
+    "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+    "category": 1,
+    "is_active": true,
+    "created_at": "2025-04-09T17:41:51.482Z",
+    "updated_at": "2025-04-09T17:41:51.482Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 14,
+  "fields": {
+    "web_id": "36e6bddd-60db-4b14-806b-5f83eb310f76",
+    "slug": "women-a",
+    "name": "Women Aaa Black",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T09:37:31.666Z",
+    "updated_at": "2025-04-11T09:37:31.666Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 15,
+  "fields": {
+    "web_id": "f9a41003-2576-4607-8e6b-dc3b8517b363",
+    "slug": "women-b",
+    "name": "Women Shalwar Qamees",
+    "description": "established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T09:40:54.166Z",
+    "updated_at": "2025-04-11T09:40:54.166Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 16,
+  "fields": {
+    "web_id": "11af166e-3de2-45a5-89c2-965ab6eaa2b9",
+    "slug": "women-c",
+    "name": "Almond Design",
+    "description": "look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, someti",
+    "category": 2,
+    "is_active": false,
+    "created_at": "2025-04-11T09:43:37.069Z",
+    "updated_at": "2025-04-11T09:43:37.069Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 17,
+  "fields": {
+    "web_id": "d87f2cbc-1d80-48b8-bb9d-ea4f120750fd",
+    "slug": "women-d",
+    "name": "Pink Flowers",
+    "description": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T09:46:18.957Z",
+    "updated_at": "2025-04-11T09:46:18.957Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 18,
+  "fields": {
+    "web_id": "563389b9-120a-43f4-b12f-a1ca00491bba",
+    "slug": "women-e",
+    "name": "Women Yelloish",
+    "description": "and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the lik",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T09:48:42.031Z",
+    "updated_at": "2025-04-11T09:48:42.031Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 19,
+  "fields": {
+    "web_id": "502aabda-1215-43d5-b9a9-530d5628afc0",
+    "slug": "women-f",
+    "name": "Golden white",
+    "description": "when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T09:50:55.664Z",
+    "updated_at": "2025-04-11T09:50:55.664Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 20,
+  "fields": {
+    "web_id": "737d987f-7768-48c2-aed6-d17ff08c4ec4",
+    "slug": "women-g",
+    "name": "Black Redish Qamees",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T09:53:21.628Z",
+    "updated_at": "2025-04-11T09:53:21.628Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 21,
+  "fields": {
+    "web_id": "e988455f-ab16-488a-87f4-68a2346ff8dc",
+    "slug": "women-h",
+    "name": "Simple Red Qamees",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T09:58:39.055Z",
+    "updated_at": "2025-04-11T09:58:39.055Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 22,
+  "fields": {
+    "web_id": "a3389530-1706-4013-b243-974900787733",
+    "slug": "women-i",
+    "name": "Women Blue Net",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem",
+    "category": 2,
+    "is_active": true,
+    "created_at": "2025-04-11T10:00:48.063Z",
+    "updated_at": "2025-04-11T10:00:48.063Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 23,
+  "fields": {
+    "web_id": "007c189a-9754-4626-a52b-4973385aa3b6",
+    "slug": "kids-a",
+    "name": "Kids Yellowish",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:22:54.798Z",
+    "updated_at": "2025-04-13T07:22:54.798Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 24,
+  "fields": {
+    "web_id": "3c066dec-a179-489b-830a-a9b731a86191",
+    "slug": "kids-b",
+    "name": "Kids in Blue",
+    "description": "look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:24:01.988Z",
+    "updated_at": "2025-04-13T07:24:01.988Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 25,
+  "fields": {
+    "web_id": "b44c9767-d28a-4a17-b848-b2667870c685",
+    "slug": "kids-c",
+    "name": "Kids Dark blue",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:26:15.598Z",
+    "updated_at": "2025-04-13T07:26:15.598Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 26,
+  "fields": {
+    "web_id": "6defd90b-3887-401a-9451-2aaec45c2d3e",
+    "slug": "kids-d",
+    "name": "Greenish looked",
+    "description": "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop p",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:29:19.365Z",
+    "updated_at": "2025-04-13T07:29:19.365Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 27,
+  "fields": {
+    "web_id": "23ad73d4-c8ba-4fd1-956e-c8de6151f51c",
+    "slug": "kids-e",
+    "name": "Blue and Yellow",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:30:45.843Z",
+    "updated_at": "2025-04-13T07:30:45.843Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 28,
+  "fields": {
+    "web_id": "96f043aa-b63f-40e0-a4e6-d4b9ebeaa073",
+    "slug": "kids-f",
+    "name": "Dark Orange in",
+    "description": "galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electr",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:32:48.554Z",
+    "updated_at": "2025-04-13T07:32:48.554Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 29,
+  "fields": {
+    "web_id": "df5cfdc6-7b56-4e6b-92cb-0a5cd5e1cf96",
+    "slug": "kids-g",
+    "name": "Warm Packing",
+    "description": "editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:34:34.696Z",
+    "updated_at": "2025-04-13T07:34:34.696Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 30,
+  "fields": {
+    "web_id": "985cb7cf-8a95-467c-bbad-0d329bc9d82a",
+    "slug": "kids-h",
+    "name": "Kids in Orange",
+    "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look lik",
+    "category": 3,
+    "is_active": true,
+    "created_at": "2025-04-13T07:37:03.862Z",
+    "updated_at": "2025-04-13T07:37:03.862Z"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 1,
+  "fields": {
+    "name": "The Logip",
+    "img_url": "1_1NJYfkL.JPG"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 2,
+  "fields": {
+    "name": "Sun Fabrics",
+    "img_url": "2.JPG"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 3,
+  "fields": {
+    "name": "Logipsm",
+    "img_url": "3.JPG"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 4,
+  "fields": {
+    "name": "Orange lines",
+    "img_url": "4.JPG"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 5,
+  "fields": {
+    "name": "Logoi great",
+    "img_url": "5.JPG"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 6,
+  "fields": {
+    "name": "The Ipusms",
+    "img_url": "6.JPG"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 7,
+  "fields": {
+    "name": "World of Ipsum",
+    "img_url": "7.JPG"
+  }
+},
+{
+  "model": "store.brand",
+  "pk": 8,
+  "fields": {
+    "name": "Just Logi",
+    "img_url": "8.JPG"
+  }
+},
+{
+  "model": "store.productattribute",
+  "pk": 1,
+  "fields": {
+    "name": "Color",
+    "description": "dsfsdfds"
+  }
+},
+{
+  "model": "store.productattribute",
+  "pk": 2,
+  "fields": {
+    "name": "Size",
+    "description": "dfsf dfssfsd fsdfds"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 3,
+  "fields": {
+    "sku": "MEN-SRT-BLK-M",
+    "upc": "454656456456",
+    "product": 2,
+    "brand": null,
+    "is_active": true,
+    "is_default": false,
+    "retail_price": "454.00",
+    "store_price": "343.00",
+    "is_digital": false,
+    "weight": 122.0,
+    "created_at": "2025-03-14T06:30:56.102Z",
+    "updated_at": "2025-03-14T06:35:59.798Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 4,
+  "fields": {
+    "sku": "MEN-SRT-BLK-L",
+    "upc": "456455765765",
+    "product": 2,
+    "brand": null,
+    "is_active": true,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "234.00",
+    "is_digital": false,
+    "weight": 122.0,
+    "created_at": "2025-03-14T06:30:56.103Z",
+    "updated_at": "2025-03-14T06:35:24.923Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 5,
+  "fields": {
+    "sku": "MEN-SRT-BLK-S",
+    "upc": "32456765",
+    "product": 2,
+    "brand": null,
+    "is_active": true,
+    "is_default": false,
+    "retail_price": "454.00",
+    "store_price": "322.00",
+    "is_digital": false,
+    "weight": 122.0,
+    "created_at": "2025-03-14T06:30:56.103Z",
+    "updated_at": "2025-03-14T06:34:52.301Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 6,
+  "fields": {
+    "sku": "MEN-SRT-WHT-M",
+    "upc": "45465645",
+    "product": 3,
+    "brand": null,
+    "is_active": true,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "324.00",
+    "is_digital": false,
+    "weight": 211.0,
+    "created_at": "2025-03-14T06:44:33.454Z",
+    "updated_at": "2025-03-14T06:45:55.993Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 7,
+  "fields": {
+    "sku": "MEN-SRT-WHT-S",
+    "upc": "454353543",
+    "product": 3,
+    "brand": null,
+    "is_active": true,
+    "is_default": false,
+    "retail_price": "345.00",
+    "store_price": "342.00",
+    "is_digital": false,
+    "weight": 211.0,
+    "created_at": "2025-03-14T06:44:33.454Z",
+    "updated_at": "2025-03-14T06:45:27.738Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 8,
+  "fields": {
+    "sku": "WOMEN-SRT-BLK-M",
+    "upc": "4353654",
+    "product": 4,
+    "brand": null,
+    "is_active": true,
+    "is_default": false,
+    "retail_price": "435.00",
+    "store_price": "233.00",
+    "is_digital": false,
+    "weight": 122.0,
+    "created_at": "2025-03-14T06:49:57.677Z",
+    "updated_at": "2025-03-14T06:54:30.620Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 9,
+  "fields": {
+    "sku": "WOMEN-SRT-WHT-S",
+    "upc": "435345436",
+    "product": 4,
+    "brand": null,
+    "is_active": true,
+    "is_default": false,
+    "retail_price": "4543.00",
+    "store_price": "322.00",
+    "is_digital": false,
+    "weight": 212.0,
+    "created_at": "2025-03-14T06:49:57.678Z",
+    "updated_at": "2025-03-14T06:53:23.996Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 10,
+  "fields": {
+    "sku": "MEN-SRT-BLK2-M",
+    "upc": "454656456446",
+    "product": 5,
+    "brand": 1,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "457.00",
+    "store_price": "345.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T14:39:09.717Z",
+    "updated_at": "2025-04-09T14:39:09.717Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 11,
+  "fields": {
+    "sku": "MEN-SRT-BLK2-S",
+    "upc": "45567656876",
+    "product": 5,
+    "brand": 1,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "345.00",
+    "store_price": "345.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T14:39:09.726Z",
+    "updated_at": "2025-04-09T14:39:09.726Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 12,
+  "fields": {
+    "sku": "MEN-JKT-BLK-M",
+    "upc": "543524",
+    "product": 6,
+    "brand": 2,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "455.00",
+    "store_price": "443.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:20:05.095Z",
+    "updated_at": "2025-04-09T17:20:05.095Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 13,
+  "fields": {
+    "sku": "MEN-JKT-GRY-M",
+    "upc": "6758876876",
+    "product": 6,
+    "brand": 2,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "445.00",
+    "store_price": "567.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:20:05.099Z",
+    "updated_at": "2025-04-09T17:20:05.099Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 14,
+  "fields": {
+    "sku": "MEN-TSR-BLK-M",
+    "upc": "675765",
+    "product": 7,
+    "brand": 3,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "567.00",
+    "store_price": "345.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:23:49.187Z",
+    "updated_at": "2025-04-09T17:23:49.187Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 15,
+  "fields": {
+    "sku": "MEN-TSR-GRN-S",
+    "upc": "45676575",
+    "product": 7,
+    "brand": 3,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "234.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:23:49.189Z",
+    "updated_at": "2025-04-09T17:23:49.189Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 16,
+  "fields": {
+    "sku": "MEN-SRD-WHT-M",
+    "upc": "6575676587",
+    "product": 8,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "676.00",
+    "store_price": "345.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:28:18.496Z",
+    "updated_at": "2025-04-09T17:28:18.496Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 17,
+  "fields": {
+    "sku": "MEN-SRD-WHT-L",
+    "upc": "4354354",
+    "product": 8,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "678.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:28:18.499Z",
+    "updated_at": "2025-04-09T17:28:18.499Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 18,
+  "fields": {
+    "sku": "MEN-IBL-BLU-M",
+    "upc": "546456",
+    "product": 9,
+    "brand": 5,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "565.00",
+    "store_price": "564.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:31:01.262Z",
+    "updated_at": "2025-04-09T17:31:01.262Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 19,
+  "fields": {
+    "sku": "MEN-WT-WHT-M",
+    "upc": "4543543534",
+    "product": 10,
+    "brand": 6,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "345.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:35:38.234Z",
+    "updated_at": "2025-04-09T17:35:38.234Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 20,
+  "fields": {
+    "sku": "MEN-IBL-BLK-L",
+    "upc": "453454353",
+    "product": 11,
+    "brand": 7,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "567.00",
+    "store_price": "456.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:37:52.677Z",
+    "updated_at": "2025-04-09T17:37:52.677Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 21,
+  "fields": {
+    "sku": "MEN-PKT-BLK-M",
+    "upc": "46456456",
+    "product": 12,
+    "brand": 2,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "654.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:40:02.059Z",
+    "updated_at": "2025-04-09T17:40:02.059Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 22,
+  "fields": {
+    "sku": "MEN-MLT-GRY-M",
+    "upc": "676567",
+    "product": 13,
+    "brand": 6,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "667.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-09T17:41:51.486Z",
+    "updated_at": "2025-04-09T17:41:51.486Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 23,
+  "fields": {
+    "sku": "WOMEN-QA-BLK-M",
+    "upc": "456456456",
+    "product": 14,
+    "brand": 3,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "567.00",
+    "store_price": "456.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:37:31.680Z",
+    "updated_at": "2025-04-11T09:37:31.680Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 24,
+  "fields": {
+    "sku": "WOMEN-QA-BLK-S",
+    "upc": "5645645645",
+    "product": 14,
+    "brand": 3,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "678.00",
+    "store_price": "456.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:37:31.687Z",
+    "updated_at": "2025-04-11T09:37:31.687Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 25,
+  "fields": {
+    "sku": "WOMEN-QB-ORG-M",
+    "upc": "4543543",
+    "product": 15,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "677.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:40:54.176Z",
+    "updated_at": "2025-04-11T09:40:54.176Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 26,
+  "fields": {
+    "sku": "WOMEN-QB-ORG-S",
+    "upc": "4545435",
+    "product": 15,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "567.00",
+    "store_price": "456.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:40:54.181Z",
+    "updated_at": "2025-04-11T09:40:54.181Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 27,
+  "fields": {
+    "sku": "WOMEN-QC-ALM-M",
+    "upc": "54353",
+    "product": 16,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "454.00",
+    "store_price": "456.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:43:37.078Z",
+    "updated_at": "2025-04-11T09:43:37.078Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 28,
+  "fields": {
+    "sku": "WOMEN-QD-PNK-M",
+    "upc": "435435435",
+    "product": 17,
+    "brand": 7,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "675.00",
+    "store_price": "678.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:46:18.964Z",
+    "updated_at": "2025-04-11T09:46:18.964Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 29,
+  "fields": {
+    "sku": "WOMEN-QD-YLW-M",
+    "upc": "343243242",
+    "product": 18,
+    "brand": 7,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "675.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:48:42.039Z",
+    "updated_at": "2025-04-11T09:48:42.040Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 30,
+  "fields": {
+    "sku": "WOMEN-QF-GLD-M",
+    "upc": "455645654",
+    "product": 19,
+    "brand": 6,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "567.00",
+    "store_price": "765.00",
+    "is_digital": false,
+    "weight": 333.0,
+    "created_at": "2025-04-11T09:50:55.670Z",
+    "updated_at": "2025-04-11T09:50:55.670Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 31,
+  "fields": {
+    "sku": "WOMEN-QG-BLK-M",
+    "upc": "4545445",
+    "product": 20,
+    "brand": 8,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "675.00",
+    "store_price": "755.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:53:21.634Z",
+    "updated_at": "2025-04-11T09:53:21.634Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 32,
+  "fields": {
+    "sku": "WOMEN-QG-PNK-M",
+    "upc": "45454543",
+    "product": 20,
+    "brand": 8,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "675.00",
+    "store_price": "567.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-11T09:53:21.638Z",
+    "updated_at": "2025-04-11T09:53:21.638Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 33,
+  "fields": {
+    "sku": "WOMEN-QH-RED-M",
+    "upc": "43543543578",
+    "product": 21,
+    "brand": 8,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "456.00",
+    "store_price": "876.00",
+    "is_digital": false,
+    "weight": 444.0,
+    "created_at": "2025-04-11T09:58:39.067Z",
+    "updated_at": "2025-04-11T09:58:39.067Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 34,
+  "fields": {
+    "sku": "WOMEN-QI-BLU-M",
+    "upc": "67657656878",
+    "product": 22,
+    "brand": 6,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "324.00",
+    "store_price": "654.00",
+    "is_digital": false,
+    "weight": 444.0,
+    "created_at": "2025-04-11T10:00:48.066Z",
+    "updated_at": "2025-04-11T10:00:48.066Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 35,
+  "fields": {
+    "sku": "KIDS-A-YLW-M",
+    "upc": "67567567",
+    "product": 23,
+    "brand": 6,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "344.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:22:54.803Z",
+    "updated_at": "2025-04-13T07:22:54.803Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 36,
+  "fields": {
+    "sku": "KIDS-B-BLU-M",
+    "upc": "324234234",
+    "product": 24,
+    "brand": 7,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "333.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:24:01.990Z",
+    "updated_at": "2025-04-13T07:24:01.990Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 37,
+  "fields": {
+    "sku": "KIDS-C-DBL-M",
+    "upc": "3445435",
+    "product": 25,
+    "brand": 2,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "345.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:26:15.600Z",
+    "updated_at": "2025-04-13T07:26:15.600Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 38,
+  "fields": {
+    "sku": "KIDS-C-DBL-S",
+    "upc": "6787686",
+    "product": 25,
+    "brand": null,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "234.00",
+    "is_digital": false,
+    "weight": 234.0,
+    "created_at": "2025-04-13T07:26:15.601Z",
+    "updated_at": "2025-04-13T07:26:15.601Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 39,
+  "fields": {
+    "sku": "KIDS-D-GRN-M",
+    "upc": "453453453454",
+    "product": 26,
+    "brand": 7,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "343.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:29:19.367Z",
+    "updated_at": "2025-04-13T07:29:19.367Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 40,
+  "fields": {
+    "sku": "KIDS-D-GRN-L",
+    "upc": "7657545",
+    "product": 26,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "345.00",
+    "store_price": "343.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:29:19.368Z",
+    "updated_at": "2025-04-13T07:29:19.368Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 41,
+  "fields": {
+    "sku": "KIDS-E-YLW-M",
+    "upc": "4564564576",
+    "product": 27,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "654.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:30:45.845Z",
+    "updated_at": "2025-04-13T07:30:45.845Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 42,
+  "fields": {
+    "sku": "KIDS-F-ORG-M",
+    "upc": "4564576765",
+    "product": 28,
+    "brand": 3,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "654.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:32:48.557Z",
+    "updated_at": "2025-04-13T07:32:48.557Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 43,
+  "fields": {
+    "sku": "KIDS-G-WHT-M",
+    "upc": "r4543543543",
+    "product": 29,
+    "brand": 4,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "234.00",
+    "store_price": "543.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:34:34.699Z",
+    "updated_at": "2025-04-13T07:34:34.699Z"
+  }
+},
+{
+  "model": "store.productvariant",
+  "pk": 44,
+  "fields": {
+    "sku": "KIDS-H-ORG-M",
+    "upc": "45765765765",
+    "product": 30,
+    "brand": 2,
+    "is_active": false,
+    "is_default": false,
+    "retail_price": "345.00",
+    "store_price": "453.00",
+    "is_digital": false,
+    "weight": 222.0,
+    "created_at": "2025-04-13T07:37:03.866Z",
+    "updated_at": "2025-04-13T07:37:03.866Z"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 5,
+  "fields": {
+    "product_variant": 5,
+    "product_attribute": 1,
+    "attribute_value": "black"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 6,
+  "fields": {
+    "product_variant": 5,
+    "product_attribute": 2,
+    "attribute_value": "S"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 7,
+  "fields": {
+    "product_variant": 4,
+    "product_attribute": 1,
+    "attribute_value": "black"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 8,
+  "fields": {
+    "product_variant": 4,
+    "product_attribute": 2,
+    "attribute_value": "L"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 9,
+  "fields": {
+    "product_variant": 3,
+    "product_attribute": 1,
+    "attribute_value": "black"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 10,
+  "fields": {
+    "product_variant": 3,
+    "product_attribute": 2,
+    "attribute_value": "M"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 11,
+  "fields": {
+    "product_variant": 7,
+    "product_attribute": 1,
+    "attribute_value": "white"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 12,
+  "fields": {
+    "product_variant": 7,
+    "product_attribute": 2,
+    "attribute_value": "S"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 13,
+  "fields": {
+    "product_variant": 6,
+    "product_attribute": 1,
+    "attribute_value": "white"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 14,
+  "fields": {
+    "product_variant": 6,
+    "product_attribute": 2,
+    "attribute_value": "M"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 15,
+  "fields": {
+    "product_variant": 9,
+    "product_attribute": 1,
+    "attribute_value": "black"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 16,
+  "fields": {
+    "product_variant": 9,
+    "product_attribute": 2,
+    "attribute_value": "S"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 17,
+  "fields": {
+    "product_variant": 8,
+    "product_attribute": 1,
+    "attribute_value": "black"
+  }
+},
+{
+  "model": "store.productattributevalues",
+  "pk": 18,
+  "fields": {
+    "product_variant": 8,
+    "product_attribute": 2,
+    "attribute_value": "M"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 4,
+  "fields": {
+    "product": 2,
+    "img_url": "bao-bao-mlKE8dEMc_8-unsplash_4RE5ecE.jpg",
+    "alt_text": "reteter",
+    "is_feature": true,
+    "created_at": "2025-03-14T06:30:56.108Z",
+    "updated_at": "2025-03-14T06:30:56.108Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 5,
+  "fields": {
+    "product": 2,
+    "img_url": "bao-bao-RYqL5hecEJo-unsplash_kUnhQPh.jpg",
+    "alt_text": "tt",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:30:56.113Z",
+    "updated_at": "2025-03-14T06:30:56.113Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 6,
+  "fields": {
+    "product": 2,
+    "img_url": "faith-yarn-Wr0TpKqf26s-unsplash_kYSFXzx.jpg",
+    "alt_text": "rtert",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:30:56.116Z",
+    "updated_at": "2025-03-14T06:30:56.116Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 7,
+  "fields": {
+    "product": 3,
+    "img_url": "bao-bao-GREEBEtyR9Y-unsplash_yMa2L6A.jpg",
+    "alt_text": "RWR",
+    "is_feature": true,
+    "created_at": "2025-03-14T06:44:33.459Z",
+    "updated_at": "2025-03-14T06:44:33.459Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 8,
+  "fields": {
+    "product": 3,
+    "img_url": "bao-bao-TysFvOl78u0-unsplash_1DT8GpD.jpg",
+    "alt_text": "rte",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:44:33.491Z",
+    "updated_at": "2025-03-14T06:44:33.491Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 9,
+  "fields": {
+    "product": 3,
+    "img_url": "christian-bolt-5b9cjjgjXKE-unsplash_H5eFnEL.jpg",
+    "alt_text": "rt",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:44:33.495Z",
+    "updated_at": "2025-03-14T06:44:33.495Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 10,
+  "fields": {
+    "product": 3,
+    "img_url": "alex-haigh-fEt6Wd4t4j0-unsplash_euy2MMs.jpg",
+    "alt_text": "rte",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:44:33.499Z",
+    "updated_at": "2025-03-14T06:44:33.499Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 11,
+  "fields": {
+    "product": 4,
+    "img_url": "faith-yarn-hgtWvsq5e2c-unsplash_KeIkH8B.jpg",
+    "alt_text": "reteter",
+    "is_feature": true,
+    "created_at": "2025-03-14T06:49:57.707Z",
+    "updated_at": "2025-03-14T06:49:57.707Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 12,
+  "fields": {
+    "product": 4,
+    "img_url": "faith-yarn-jX2cntCbrAo-unsplash_dlZgFoP.jpg",
+    "alt_text": "RET",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:49:57.712Z",
+    "updated_at": "2025-03-14T06:49:57.712Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 13,
+  "fields": {
+    "product": 4,
+    "img_url": "faith-yarn-NfF5QSjLnN8-unsplash_fpTnVp5.jpg",
+    "alt_text": "rett",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:49:57.716Z",
+    "updated_at": "2025-03-14T06:49:57.716Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 14,
+  "fields": {
+    "product": 4,
+    "img_url": "faith-yarn-Wr0TpKqf26s-unsplash_mLuPiIb.jpg",
+    "alt_text": "tyry",
+    "is_feature": false,
+    "created_at": "2025-03-14T06:49:57.720Z",
+    "updated_at": "2025-03-14T06:49:57.720Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 15,
+  "fields": {
+    "product": 5,
+    "img_url": "black.JPG",
+    "alt_text": "reteter",
+    "is_feature": true,
+    "created_at": "2025-04-09T14:39:09.734Z",
+    "updated_at": "2025-04-09T14:39:09.734Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 16,
+  "fields": {
+    "product": 5,
+    "img_url": "black2.JPG",
+    "alt_text": "RET",
+    "is_feature": false,
+    "created_at": "2025-04-09T14:39:09.743Z",
+    "updated_at": "2025-04-09T14:39:09.743Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 17,
+  "fields": {
+    "product": 5,
+    "img_url": "black3.JPG",
+    "alt_text": "dfdsfs",
+    "is_feature": false,
+    "created_at": "2025-04-09T14:39:09.747Z",
+    "updated_at": "2025-04-09T14:39:09.748Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 18,
+  "fields": {
+    "product": 5,
+    "img_url": "black4.JPG",
+    "alt_text": "dfdfd",
+    "is_feature": false,
+    "created_at": "2025-04-09T14:39:09.751Z",
+    "updated_at": "2025-04-09T14:39:09.751Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 19,
+  "fields": {
+    "product": 6,
+    "img_url": "gray.JPG",
+    "alt_text": "trt",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:20:05.109Z",
+    "updated_at": "2025-04-09T17:20:05.109Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 20,
+  "fields": {
+    "product": 6,
+    "img_url": "3_G3lEHS6.JPG",
+    "alt_text": "rtrt",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:20:05.120Z",
+    "updated_at": "2025-04-09T17:20:05.120Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 21,
+  "fields": {
+    "product": 6,
+    "img_url": "2_Fa3hiLB.JPG",
+    "alt_text": "rtrt",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:20:05.130Z",
+    "updated_at": "2025-04-09T17:20:05.130Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 22,
+  "fields": {
+    "product": 7,
+    "img_url": "2_BUtNdJe.JPG",
+    "alt_text": "rtrt",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:23:49.194Z",
+    "updated_at": "2025-04-09T17:23:49.195Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 23,
+  "fields": {
+    "product": 7,
+    "img_url": "green.JPG",
+    "alt_text": "rtert",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:23:49.202Z",
+    "updated_at": "2025-04-09T17:23:49.202Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 24,
+  "fields": {
+    "product": 7,
+    "img_url": "3_muVxcin.JPG",
+    "alt_text": "rtret",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:23:49.239Z",
+    "updated_at": "2025-04-09T17:23:49.239Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 25,
+  "fields": {
+    "product": 8,
+    "img_url": "half.JPG",
+    "alt_text": "retert",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:28:18.504Z",
+    "updated_at": "2025-04-09T17:28:18.504Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 26,
+  "fields": {
+    "product": 8,
+    "img_url": "3_xYeS1z4.JPG",
+    "alt_text": "rtr",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:28:18.510Z",
+    "updated_at": "2025-04-09T17:28:18.510Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 27,
+  "fields": {
+    "product": 8,
+    "img_url": "2_vL4Pv9L.JPG",
+    "alt_text": "rtr",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:28:18.513Z",
+    "updated_at": "2025-04-09T17:28:18.514Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 28,
+  "fields": {
+    "product": 9,
+    "img_url": "2_qOxJiHk.JPG",
+    "alt_text": "rtr",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:31:01.267Z",
+    "updated_at": "2025-04-09T17:31:01.267Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 29,
+  "fields": {
+    "product": 9,
+    "img_url": "blue.JPG",
+    "alt_text": "rtret",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:31:01.273Z",
+    "updated_at": "2025-04-09T17:31:01.273Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 30,
+  "fields": {
+    "product": 9,
+    "img_url": "3_d13ZQig.JPG",
+    "alt_text": "rret",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:31:01.277Z",
+    "updated_at": "2025-04-09T17:31:01.277Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 31,
+  "fields": {
+    "product": 10,
+    "img_url": "3_h32psI0.JPG",
+    "alt_text": "fgfdg",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:35:38.239Z",
+    "updated_at": "2025-04-09T17:35:38.239Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 32,
+  "fields": {
+    "product": 10,
+    "img_url": "2_uO7M4yd.JPG",
+    "alt_text": "fgf",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:35:38.245Z",
+    "updated_at": "2025-04-09T17:35:38.245Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 33,
+  "fields": {
+    "product": 10,
+    "img_url": "white2.JPG",
+    "alt_text": "fgfdg",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:35:38.250Z",
+    "updated_at": "2025-04-09T17:35:38.250Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 34,
+  "fields": {
+    "product": 10,
+    "img_url": "4_JcOznS7.JPG",
+    "alt_text": "fgfdgd",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:35:38.255Z",
+    "updated_at": "2025-04-09T17:35:38.255Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 35,
+  "fields": {
+    "product": 11,
+    "img_url": "black_3KgVmrG.JPG",
+    "alt_text": "rte",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:37:52.685Z",
+    "updated_at": "2025-04-09T17:37:52.685Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 36,
+  "fields": {
+    "product": 11,
+    "img_url": "black2_Shg0EkJ.JPG",
+    "alt_text": "rter",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:37:52.693Z",
+    "updated_at": "2025-04-09T17:37:52.693Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 37,
+  "fields": {
+    "product": 11,
+    "img_url": "t2.JPG",
+    "alt_text": "rtrt",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:37:52.698Z",
+    "updated_at": "2025-04-09T17:37:52.699Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 38,
+  "fields": {
+    "product": 12,
+    "img_url": "3_R2op64K.JPG",
+    "alt_text": "ffdg",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:40:02.067Z",
+    "updated_at": "2025-04-09T17:40:02.067Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 39,
+  "fields": {
+    "product": 12,
+    "img_url": "4_GziqX5X.JPG",
+    "alt_text": "fgdf",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:40:02.077Z",
+    "updated_at": "2025-04-09T17:40:02.077Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 40,
+  "fields": {
+    "product": 12,
+    "img_url": "2_raaYCDm.JPG",
+    "alt_text": "fgdf",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:40:02.109Z",
+    "updated_at": "2025-04-09T17:40:02.109Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 41,
+  "fields": {
+    "product": 12,
+    "img_url": "oneck.JPG",
+    "alt_text": "fgfd",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:40:02.115Z",
+    "updated_at": "2025-04-09T17:40:02.115Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 42,
+  "fields": {
+    "product": 13,
+    "img_url": "dot3.JPG",
+    "alt_text": "fgdf",
+    "is_feature": true,
+    "created_at": "2025-04-09T17:41:51.490Z",
+    "updated_at": "2025-04-09T17:41:51.490Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 43,
+  "fields": {
+    "product": 13,
+    "img_url": "dotted.JPG",
+    "alt_text": "fgd",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:41:51.495Z",
+    "updated_at": "2025-04-09T17:41:51.495Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 44,
+  "fields": {
+    "product": 13,
+    "img_url": "dot2.JPG",
+    "alt_text": "fgdfg",
+    "is_feature": false,
+    "created_at": "2025-04-09T17:41:51.499Z",
+    "updated_at": "2025-04-09T17:41:51.499Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 45,
+  "fields": {
+    "product": 14,
+    "img_url": "a1.JPG",
+    "alt_text": "dfdsfds",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:37:31.700Z",
+    "updated_at": "2025-04-11T09:37:31.700Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 46,
+  "fields": {
+    "product": 14,
+    "img_url": "a2.JPG",
+    "alt_text": "dfdsf",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:37:31.713Z",
+    "updated_at": "2025-04-11T09:37:31.713Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 47,
+  "fields": {
+    "product": 14,
+    "img_url": "a3.JPG",
+    "alt_text": "dfdsf",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:37:31.725Z",
+    "updated_at": "2025-04-11T09:37:31.725Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 48,
+  "fields": {
+    "product": 14,
+    "img_url": "a4.JPG",
+    "alt_text": "dfdsf",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:37:31.734Z",
+    "updated_at": "2025-04-11T09:37:31.734Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 49,
+  "fields": {
+    "product": 15,
+    "img_url": "b1.JPG",
+    "alt_text": "gfdg",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:40:54.192Z",
+    "updated_at": "2025-04-11T09:40:54.193Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 50,
+  "fields": {
+    "product": 15,
+    "img_url": "b2.JPG",
+    "alt_text": "fgdfg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:40:54.206Z",
+    "updated_at": "2025-04-11T09:40:54.206Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 51,
+  "fields": {
+    "product": 15,
+    "img_url": "b3.JPG",
+    "alt_text": "fgdfg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:40:54.216Z",
+    "updated_at": "2025-04-11T09:40:54.216Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 52,
+  "fields": {
+    "product": 16,
+    "img_url": "c1.JPG",
+    "alt_text": "fdfgfd",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:43:37.092Z",
+    "updated_at": "2025-04-11T09:43:37.092Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 53,
+  "fields": {
+    "product": 16,
+    "img_url": "c3.JPG",
+    "alt_text": "fdgdg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:43:37.107Z",
+    "updated_at": "2025-04-11T09:43:37.107Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 54,
+  "fields": {
+    "product": 16,
+    "img_url": "c4.JPG",
+    "alt_text": "fdgfdg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:43:37.116Z",
+    "updated_at": "2025-04-11T09:43:37.116Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 55,
+  "fields": {
+    "product": 17,
+    "img_url": "d1.JPG",
+    "alt_text": "43",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:46:18.972Z",
+    "updated_at": "2025-04-11T09:46:18.972Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 56,
+  "fields": {
+    "product": 17,
+    "img_url": "d2.JPG",
+    "alt_text": "efdsf",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:46:19.005Z",
+    "updated_at": "2025-04-11T09:46:19.005Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 57,
+  "fields": {
+    "product": 17,
+    "img_url": "d3.JPG",
+    "alt_text": "dfd",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:46:19.009Z",
+    "updated_at": "2025-04-11T09:46:19.009Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 58,
+  "fields": {
+    "product": 18,
+    "img_url": "e3.JPG",
+    "alt_text": "re",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:48:42.051Z",
+    "updated_at": "2025-04-11T09:48:42.051Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 59,
+  "fields": {
+    "product": 18,
+    "img_url": "e4.JPG",
+    "alt_text": "fgfgf",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:48:42.063Z",
+    "updated_at": "2025-04-11T09:48:42.063Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 60,
+  "fields": {
+    "product": 18,
+    "img_url": "e1.JPG",
+    "alt_text": "fgfg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:48:42.099Z",
+    "updated_at": "2025-04-11T09:48:42.099Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 61,
+  "fields": {
+    "product": 19,
+    "img_url": "f1.JPG",
+    "alt_text": "fdsf",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:50:55.677Z",
+    "updated_at": "2025-04-11T09:50:55.677Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 62,
+  "fields": {
+    "product": 19,
+    "img_url": "f2.JPG",
+    "alt_text": "dfd",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:50:55.685Z",
+    "updated_at": "2025-04-11T09:50:55.685Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 63,
+  "fields": {
+    "product": 19,
+    "img_url": "f3.JPG",
+    "alt_text": "dfds",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:50:55.690Z",
+    "updated_at": "2025-04-11T09:50:55.690Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 64,
+  "fields": {
+    "product": 19,
+    "img_url": "f4.JPG",
+    "alt_text": "dfsfs",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:50:55.696Z",
+    "updated_at": "2025-04-11T09:50:55.696Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 65,
+  "fields": {
+    "product": 20,
+    "img_url": "g1.JPG",
+    "alt_text": "gffdgdf",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:53:21.643Z",
+    "updated_at": "2025-04-11T09:53:21.643Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 66,
+  "fields": {
+    "product": 20,
+    "img_url": "g2.JPG",
+    "alt_text": "fgfdg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:53:21.651Z",
+    "updated_at": "2025-04-11T09:53:21.651Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 67,
+  "fields": {
+    "product": 20,
+    "img_url": "g3.JPG",
+    "alt_text": "fdgfdg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:53:21.657Z",
+    "updated_at": "2025-04-11T09:53:21.657Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 68,
+  "fields": {
+    "product": 20,
+    "img_url": "g4.JPG",
+    "alt_text": "fdgdfg",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:53:21.691Z",
+    "updated_at": "2025-04-11T09:53:21.691Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 69,
+  "fields": {
+    "product": 21,
+    "img_url": "h4.JPG",
+    "alt_text": "rtret",
+    "is_feature": true,
+    "created_at": "2025-04-11T09:58:39.078Z",
+    "updated_at": "2025-04-11T09:58:39.078Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 70,
+  "fields": {
+    "product": 21,
+    "img_url": "h3.JPG",
+    "alt_text": "rtrete",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:58:39.091Z",
+    "updated_at": "2025-04-11T09:58:39.091Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 71,
+  "fields": {
+    "product": 21,
+    "img_url": "h2.JPG",
+    "alt_text": "rtrete",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:58:39.101Z",
+    "updated_at": "2025-04-11T09:58:39.101Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 72,
+  "fields": {
+    "product": 21,
+    "img_url": "h1.JPG",
+    "alt_text": "rtret",
+    "is_feature": false,
+    "created_at": "2025-04-11T09:58:39.134Z",
+    "updated_at": "2025-04-11T09:58:39.135Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 73,
+  "fields": {
+    "product": 22,
+    "img_url": "i1.JPG",
+    "alt_text": "rtre",
+    "is_feature": true,
+    "created_at": "2025-04-11T10:00:48.069Z",
+    "updated_at": "2025-04-11T10:00:48.069Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 74,
+  "fields": {
+    "product": 22,
+    "img_url": "i2.JPG",
+    "alt_text": "rtr",
+    "is_feature": false,
+    "created_at": "2025-04-11T10:00:48.072Z",
+    "updated_at": "2025-04-11T10:00:48.072Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 75,
+  "fields": {
+    "product": 22,
+    "img_url": "i3.JPG",
+    "alt_text": "rtrt",
+    "is_feature": false,
+    "created_at": "2025-04-11T10:00:48.073Z",
+    "updated_at": "2025-04-11T10:00:48.073Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 76,
+  "fields": {
+    "product": 23,
+    "img_url": "a1_ssa1PqP.JPG",
+    "alt_text": "eret",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:22:54.806Z",
+    "updated_at": "2025-04-13T07:22:54.806Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 77,
+  "fields": {
+    "product": 23,
+    "img_url": "a2_1qvvGFz.JPG",
+    "alt_text": "rtr",
+    "is_feature": false,
+    "created_at": "2025-04-13T07:22:54.810Z",
+    "updated_at": "2025-04-13T07:22:54.810Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 78,
+  "fields": {
+    "product": 24,
+    "img_url": "b1_zpIWxAj.JPG",
+    "alt_text": "dfds",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:24:01.993Z",
+    "updated_at": "2025-04-13T07:24:01.993Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 79,
+  "fields": {
+    "product": 25,
+    "img_url": "c2.JPG",
+    "alt_text": "4fdg",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:26:15.602Z",
+    "updated_at": "2025-04-13T07:26:15.602Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 80,
+  "fields": {
+    "product": 25,
+    "img_url": "c1_Og5dPdy.JPG",
+    "alt_text": "fgfdg",
+    "is_feature": false,
+    "created_at": "2025-04-13T07:26:15.605Z",
+    "updated_at": "2025-04-13T07:26:15.605Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 81,
+  "fields": {
+    "product": 26,
+    "img_url": "d1_u93z1ww.JPG",
+    "alt_text": "45435",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:29:19.369Z",
+    "updated_at": "2025-04-13T07:29:19.369Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 82,
+  "fields": {
+    "product": 27,
+    "img_url": "e1_Y9tKo0j.JPG",
+    "alt_text": "fdge",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:30:45.847Z",
+    "updated_at": "2025-04-13T07:30:45.847Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 83,
+  "fields": {
+    "product": 27,
+    "img_url": "e2.JPG",
+    "alt_text": "fgfdgfd",
+    "is_feature": false,
+    "created_at": "2025-04-13T07:30:45.850Z",
+    "updated_at": "2025-04-13T07:30:45.850Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 84,
+  "fields": {
+    "product": 28,
+    "img_url": "f1_7Wcygg1.JPG",
+    "alt_text": "rretre",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:32:48.559Z",
+    "updated_at": "2025-04-13T07:32:48.559Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 85,
+  "fields": {
+    "product": 28,
+    "img_url": "f2_tCmvqUT.JPG",
+    "alt_text": "rtret",
+    "is_feature": false,
+    "created_at": "2025-04-13T07:32:48.587Z",
+    "updated_at": "2025-04-13T07:32:48.587Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 86,
+  "fields": {
+    "product": 29,
+    "img_url": "g2_oXBrJbE.JPG",
+    "alt_text": "ffgdfgd",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:34:34.701Z",
+    "updated_at": "2025-04-13T07:34:34.701Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 87,
+  "fields": {
+    "product": 29,
+    "img_url": "g1_pxkAYLJ.JPG",
+    "alt_text": "fgdgdf",
+    "is_feature": false,
+    "created_at": "2025-04-13T07:34:34.703Z",
+    "updated_at": "2025-04-13T07:34:34.703Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 88,
+  "fields": {
+    "product": 30,
+    "img_url": "f2_zrsPziG.JPG",
+    "alt_text": "trret",
+    "is_feature": true,
+    "created_at": "2025-04-13T07:37:03.868Z",
+    "updated_at": "2025-04-13T07:37:03.868Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 89,
+  "fields": {
+    "product": 30,
+    "img_url": "f3_lMfZiJ2.JPG",
+    "alt_text": "rtert",
+    "is_feature": false,
+    "created_at": "2025-04-13T07:37:03.871Z",
+    "updated_at": "2025-04-13T07:37:03.871Z"
+  }
+},
+{
+  "model": "store.media",
+  "pk": 90,
+  "fields": {
+    "product": 30,
+    "img_url": "f4_G42QKuw.JPG",
+    "alt_text": "rtret",
+    "is_feature": false,
+    "created_at": "2025-04-13T07:37:03.873Z",
+    "updated_at": "2025-04-13T07:37:03.873Z"
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 1,
+  "fields": {
+    "product_variant": 5,
+    "last_checked": "2025-03-14T06:34:29Z",
+    "units": 300,
+    "units_sold": 10
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 2,
+  "fields": {
+    "product_variant": 4,
+    "last_checked": "2025-03-14T06:34:59Z",
+    "units": 200,
+    "units_sold": 50
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 3,
+  "fields": {
+    "product_variant": 3,
+    "last_checked": "2025-03-14T06:35:35Z",
+    "units": 600,
+    "units_sold": 40
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 4,
+  "fields": {
+    "product_variant": 7,
+    "last_checked": "2025-03-14T06:44:53Z",
+    "units": 333,
+    "units_sold": 23
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 5,
+  "fields": {
+    "product_variant": 6,
+    "last_checked": "2025-03-14T06:45:34Z",
+    "units": 345,
+    "units_sold": 34
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 6,
+  "fields": {
+    "product_variant": 9,
+    "last_checked": "2025-03-14T06:52:59Z",
+    "units": 567,
+    "units_sold": 46
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 7,
+  "fields": {
+    "product_variant": 8,
+    "last_checked": "2025-03-14T06:53:32Z",
+    "units": 435,
+    "units_sold": 567
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 8,
+  "fields": {
+    "product_variant": 10,
+    "last_checked": "2025-04-13T07:54:03Z",
+    "units": 5,
+    "units_sold": 3
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 9,
+  "fields": {
+    "product_variant": 11,
+    "last_checked": "2025-04-13T07:55:15Z",
+    "units": 440,
+    "units_sold": 34
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 10,
+  "fields": {
+    "product_variant": 12,
+    "last_checked": "2025-04-13T07:55:38Z",
+    "units": 34,
+    "units_sold": 3
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 11,
+  "fields": {
+    "product_variant": 13,
+    "last_checked": "2025-04-13T07:55:57Z",
+    "units": 450,
+    "units_sold": 330
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 12,
+  "fields": {
+    "product_variant": 15,
+    "last_checked": "2025-04-13T07:56:17Z",
+    "units": 345,
+    "units_sold": 20
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 13,
+  "fields": {
+    "product_variant": 16,
+    "last_checked": "2025-04-13T07:56:39Z",
+    "units": 120,
+    "units_sold": 40
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 14,
+  "fields": {
+    "product_variant": 18,
+    "last_checked": "2025-04-13T07:56:57Z",
+    "units": 230,
+    "units_sold": 40
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 15,
+  "fields": {
+    "product_variant": 19,
+    "last_checked": "2025-04-13T07:57:20Z",
+    "units": 70,
+    "units_sold": 40
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 16,
+  "fields": {
+    "product_variant": 21,
+    "last_checked": "2025-04-13T07:57:37Z",
+    "units": 220,
+    "units_sold": 30
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 17,
+  "fields": {
+    "product_variant": 22,
+    "last_checked": "2025-04-13T07:58:08Z",
+    "units": 450,
+    "units_sold": 230
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 18,
+  "fields": {
+    "product_variant": 23,
+    "last_checked": "2025-04-13T07:58:49Z",
+    "units": 540,
+    "units_sold": 340
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 19,
+  "fields": {
+    "product_variant": 26,
+    "last_checked": "2025-04-13T07:59:07Z",
+    "units": 210,
+    "units_sold": 60
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 20,
+  "fields": {
+    "product_variant": 28,
+    "last_checked": "2025-04-13T07:59:24Z",
+    "units": 320,
+    "units_sold": 120
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 21,
+  "fields": {
+    "product_variant": 33,
+    "last_checked": "2025-04-13T07:59:58Z",
+    "units": 230,
+    "units_sold": 40
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 22,
+  "fields": {
+    "product_variant": 34,
+    "last_checked": "2025-04-13T08:00:13Z",
+    "units": 650,
+    "units_sold": 210
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 23,
+  "fields": {
+    "product_variant": 35,
+    "last_checked": "2025-04-13T08:01:45Z",
+    "units": 430,
+    "units_sold": 230
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 24,
+  "fields": {
+    "product_variant": 36,
+    "last_checked": "2025-04-13T08:02:55Z",
+    "units": 320,
+    "units_sold": 30
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 25,
+  "fields": {
+    "product_variant": 37,
+    "last_checked": "2025-04-13T08:03:12Z",
+    "units": 230,
+    "units_sold": 60
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 26,
+  "fields": {
+    "product_variant": 39,
+    "last_checked": "2025-04-13T08:03:28Z",
+    "units": 430,
+    "units_sold": 120
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 27,
+  "fields": {
+    "product_variant": 42,
+    "last_checked": "2025-04-13T08:03:45Z",
+    "units": 340,
+    "units_sold": 50
+  }
+},
+{
+  "model": "store.stock",
+  "pk": 28,
+  "fields": {
+    "product_variant": 44,
+    "last_checked": "2025-04-13T08:04:01Z",
+    "units": 310,
+    "units_sold": 70
+  }
+}
+]

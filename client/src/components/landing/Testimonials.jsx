@@ -4,28 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const testimonials = [
-  {
-    avatar: "/images/user1.jpg",
-    name: "John Doe",
-    rating: 5,
-    text: "This service is fantastic! Highly recommended.",
-  },
-  {
-    avatar: "/images/user2.jpg",
-    name: "Jane Smith",
-    rating: 4,
-    text: "Great experience overall. Would use again.",
-  },
-  {
-    avatar: "/images/user3.jpg",
-    name: "Sam Wilson",
-    rating: 5,
-    text: "Absolutely loved it. Excellent customer service.",
-  },
-];
-
-const Testimonials = ({ className }) => {
+const Testimonials = ({ testimonials, className }) => {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [animating, setAnimating] = useState(false);
   const interval = useRef(null);
@@ -54,7 +33,7 @@ const Testimonials = ({ className }) => {
   }, []);
 
   return (
-    <section className={`py-16 lg:py-20 bg-secondary/30 ${className}`}>
+    <section className={`py-16 lg:py-20 bg-gray-50 dark:bg-black ${className}`}>
       <div className="container relative">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold">Client Testimonial</h2>
@@ -72,8 +51,12 @@ const Testimonials = ({ className }) => {
                   <div className="flex justify-center">
                     <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-background">
                       <img
-                        src={testimonials[currentIdx].avatar}
-                        alt={testimonials[currentIdx].name}
+                        src={
+                          process.env.NEXT_PUBLIC_SERVER_URL +
+                          "/" +
+                          testimonials[currentIdx].user.profile.avatar
+                        }
+                        alt={testimonials[currentIdx].user.username}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -92,11 +75,11 @@ const Testimonials = ({ className }) => {
                       ))}
                     </div>
                     <p className="text-lg italic">
-                      "{testimonials[currentIdx].text}"
+                      "{testimonials[currentIdx].content}"
                     </p>
                     <div>
                       <h4 className="font-semibold">
-                        {testimonials[currentIdx].name}
+                        {testimonials[currentIdx].user.username}
                       </h4>
                       <p className="text-sm text-muted-foreground">
                         Verified Customer
@@ -111,7 +94,7 @@ const Testimonials = ({ className }) => {
           <Button
             size="icon"
             variant="outline"
-            className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full"
+            className="absolute bg-gray-50 dark:bg-gray-800 left-0 top-1/2 -translate-y-1/2 rounded-full"
             onClick={prevTestimonial}
           >
             <ChevronLeft className="h-4 w-4" />
@@ -119,10 +102,10 @@ const Testimonials = ({ className }) => {
           <Button
             size="icon"
             variant="outline"
-            className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full"
+            className="absolute bg-gray-50 dark:bg-gray-800 right-0 top-1/2 -translate-y-1/2 rounded-full"
             onClick={nextTestimonial}
           >
-            <ChevronRight className="h-4 w-4" />
+            <ChevronRight className="h-4 w-4 " />
           </Button>
         </div>
 

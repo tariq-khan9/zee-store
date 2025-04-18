@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Category,Collection, Product, Media, ProductVariant, Stock, ProductAttributeValues
+from .models import Category,Stock, Collection,Brand, Product, Media, ProductVariant, Stock, ProductAttributeValues
 
 class StockSerializer(serializers.ModelSerializer):
     class Meta:
@@ -46,4 +46,14 @@ class CategorySerializer(serializers.ModelSerializer):
 class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Collection
+        fields = '__all__'
+
+class BrandSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Brand
+        fields = '__all__'
+
+class StockSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Stock
         fields = '__all__'

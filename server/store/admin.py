@@ -2,7 +2,7 @@ from django.contrib import admin
 from mptt.admin import MPTTModelAdmin
 
 from .models import (
-    Category,Collection, Product, ProductAttribute, ProductVariant, Stock, Media, ProductAttributeValues
+    Category,Collection,Brand,Stock, Product, ProductAttribute, ProductVariant, Stock, Media, ProductAttributeValues
 )
 
 admin.site.register(Category, MPTTModelAdmin)
@@ -40,4 +40,8 @@ class ProductAttributeAdmin(admin.ModelAdmin):
 
 @admin.register(Collection)
 class CollectionAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(Stock)
+class StockAdmin(admin.ModelAdmin):
     pass

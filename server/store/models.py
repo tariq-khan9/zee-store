@@ -47,6 +47,7 @@ class Product(models.Model):
 
 class Brand(models.Model):
     name = models.CharField(max_length=255, unique=True)
+    img_url = models.ImageField()
 
     def __str__(self):
         return self.name
