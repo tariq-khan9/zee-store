@@ -57,7 +57,7 @@ const ProductDetails = ({ product }) => {
                   className=" image-thumbnail group cursor-pointer"
                 >
                   <Image
-                    src={`http://127.0.0.1:8000${prod.img_url}`}
+                    src={`${process.env.NEXT_PUBLIC_SERVER_URL}${prod.img_url}`}
                     alt="product"
                     fill
                     className="object-cover"
@@ -68,7 +68,7 @@ const ProductDetails = ({ product }) => {
           </div>
           <div className="image-main group cursor-pointer">
             <Image
-              src={`http://127.0.0.1:8000${product.product_media[featureImage].img_url}`}
+              src={`${process.env.NEXT_PUBLIC_SERVER_URL}${product.product_media[featureImage].img_url}`}
               alt="product"
               fill
               className="object-cover"
@@ -84,9 +84,9 @@ const ProductDetails = ({ product }) => {
           <h3 className="mt-4">Attributes</h3>
           <div className="flex flex-col gap-x-2">
             {newarr.flat().map((element, i) => (
-              <>
-                <div className="flex flex-row">{element[i]}</div>
-              </>
+              <div key={i} className="flex flex-row">
+                {element[i]}
+              </div>
             ))}
           </div>
         </div>
