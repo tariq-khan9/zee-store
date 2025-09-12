@@ -1,5 +1,4 @@
 import LandingPage from "@/components/pages/Landing";
-import NewArrival from "@/components/landing/Brands";
 
 import Testimonials from "@/components/landing/Testimonials";
 import Newsletter from "@/components/landing/Newsletter";

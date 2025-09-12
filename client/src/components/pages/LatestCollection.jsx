@@ -4,7 +4,7 @@ import Link from "next/link";
 
 async function getProducts() {
   try {
-    const res = await fetch("http://127.0.0.1:8000/api/");
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/`);
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
@@ -40,10 +40,10 @@ export default async function LatestCollection() {
       <div className="grid grid-cols-3 md:grid-cols-4 gap-y-4">
         {products.map((prod) => (
           <div key={prod.id}>
-            <Link href={`http://127.0.0.1:3000/product/${prod.slug}`}>
+            <Link href={`/product/${prod.slug}`}>
               <div className="image-list group cursor-pointer">
                 <Image
-                  src={`http://127.0.0.1:8000${prod.product_media[0].img_url}`}
+                  src={`${process.env.NEXT_PUBLIC_SERVER_URL}${prod.product_media[0].img_url}`}
                   alt="this"
                   fill
                   className="image-transition"

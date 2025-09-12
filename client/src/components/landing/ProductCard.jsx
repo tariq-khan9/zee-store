@@ -20,7 +20,7 @@ const ProductCard = ({ product, featured = false }) => {
       >
         <div className="relative aspect-square overflow-hidden bg-secondary/30 -m-6 p-0">
           <img
-            src={`http://127.0.0.1:8000${
+            src={`${process.env.NEXT_PUBLIC_SERVER_URL}${
               product.product_media ? product.product_media[0]?.img_url : ""
             }`}
             alt={product.name}

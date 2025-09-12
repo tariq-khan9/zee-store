@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "corsheaders",
+    'rest_framework',
     'store',
     'users',
+    'orders',
     'mptt',
 ]
 
@@ -148,6 +150,6 @@ CORS_ALLOW_ALL_ORIGINS = True  # Allows all origins (useful for local dev)
 
 # OR, for security, allow only your frontend:
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "http://localhost:7000",
+    "http://127.0.0.1:7000",
 ]

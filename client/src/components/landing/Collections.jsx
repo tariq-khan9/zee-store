@@ -36,7 +36,7 @@ const Collections = ({ collections }) => {
                 className={`absolute inset-0 bg-gradient-to-br to-gray-500`}
               />
               <img
-                src={`http://127.0.0.1:8000${category.img_url}`}
+                src={`${process.env.NEXT_PUBLIC_SERVER_URL}${category.img_url}`}
                 alt={category.name}
                 className="w-full h-full object-cover mix-blend-overlay"
               />
